@@ -15,7 +15,7 @@ public class DownloadAndPlay {
                 URL mp3URL = new URL(mp3Url);
                 URLConnection mp3Connection = mp3URL.openConnection();
                 InputStream mp3InputStream = mp3Connection.getInputStream();
-                FileOutputStream mp3OutputStream = new FileOutputStream("драйв.mp3");
+                FileOutputStream mp3OutputStream = new FileOutputStream("C:\\Users\\Мария\\IdeaProjects\\Save\\музыка\\драйв.mp3");
 
                 byte[] buffer = new byte[1024];
                 int bytesRead;
@@ -27,7 +27,7 @@ public class DownloadAndPlay {
                 mp3InputStream.close();
 
                 // Воспроизводим mp3-файл
-                playMp3("драйв.mp3");
+                playMp3("C:\\Users\\Мария\\IdeaProjects\\Save\\музыка\\драйв.mp3");
             } catch (IOException e) {
                 e.printStackTrace();
             }
